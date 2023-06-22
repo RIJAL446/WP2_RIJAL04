@@ -11,7 +11,7 @@
                 </div>
             </div>
             <div class="form-group row">
-                <label for="nama" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                <label for="nama" class="col-sm-2 col-form-label">Name Lengkap</label>
                 <div class="col-sm-10">
                     <input type="text" class="form-control"
                     id="nama" name="nama" value="<?= $user['nama']; ?>">
