@@ -9,7 +9,7 @@
 
     <title> Akses diblok </title>
 <!-- Custom fonts for this template-->
-    <link href="<?= base_url('assets/');?>vendor/fontawesomefree/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url('assets/');?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,30
 0i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <!-- Custom styles for this template-->
@@ -51,12 +51,12 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
                         <button class="close" type="button" data-dismiss="modal"aria-label="Close">
-                            <span aria-hidden="true">×</span>
+                            <span aria-hidden="true">x</span>
                         </button>
                     </div>
                     <div class="modal-body">Select "Logout" below if you areready to end your current session.</div>
                     <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" datadismiss="modal">Cancel</button>
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                         <a class="btn btn-primary" href="login.html">Logout</a>
                     </div>
                 </div>
@@ -66,8 +66,8 @@
         <script src="<?=base_url('assets/');?>vendor/jquery/jquery.min.js"></script>
         <script src="<?=base_url('assets/');?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <!-- Core plugin JavaScript-->
-        <script src="<?= base_url('assets/');?>vendor/jqueryeasing/jquery.easing.min.js"></script>
+        <script src="<?= base_url('assets/');?>vendor/jquery-easing/jquery.easing.min.js"></script>
         <!-- Custom scripts for all pages-->
-        <script src="<?= base_url('assets/');?>js/sb-admin2.min.js"></script>
+        <script src="<?= base_url('assets/');?>js/sb-admin-2.min.js"></script>
 </body>
 </html>

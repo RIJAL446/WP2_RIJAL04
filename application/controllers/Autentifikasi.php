@@ -24,14 +24,7 @@ class Autentifikasi extends CI_Controller
         $this->_login();
     }
 }
-            public function blok()
-            {
-                $this->load->view('autentifikasi/blok');
-            }
-            public function gagal()
-            {
-                $this->load->view('autentifikasi/gagal');
-            }
+
 private function _login()
     {
         $email = htmlspecialchars($this->input->post('email', 
@@ -78,6 +71,15 @@ private function _login()
         }
     }
 
+                public function blok()
+            {
+                $this->load->view('autentifikasi/blok');
+            }
+            public function gagal()
+            {
+                $this->load->view('autentifikasi/gagal');
+            }
+
                 public function registrasi()
 
             {
@@ -88,7 +90,7 @@ private function _login()
                 //bahasa sendiri yaitu 'Nama Belum diisi'
                 $this->form_validation->set_rules('nama', 'Nama Lengkap', 
                 'required', [
-                    'required' => 'Nama Belum diis!!'
+                    'required' => 'Nama Belum diisi!!'
                 ]);
                 //membuat rule untuk inputan email agar tidak boleh kosong, tidak ada spasi, format email harus valid
                 //dan email belum pernah dipakai sama user lain dengan membuat pesan error dengan bahasa sendiri 
@@ -127,9 +129,9 @@ private function _login()
                         'nama' => htmlspecialchars($this->input->post('nama', true)),
                         'email' => htmlspecialchars($email),
                         'image' => 'default.jpg',
-                        'role_id' => 2,
+                        'role_id' => 1,
                         'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-                        'is_active' => 0,
+                        'is_active' => 1,
                         'tanggal_input' => time()
                     ];
                     $this->ModelUser->simpanData($data); //menggunakan model
