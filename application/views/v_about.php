@@ -1,19 +1,19 @@
 <section>
     <h1><?php echo $judul ?></h1>
-    <h4>RIJAL</h4>
+    <h4>Lestari</h4>
     <ul type="disc">
-        <li>Nama Depan : Rezael</li>
-        <li>Nama Belakang : Ramli</li>
+        <li>Nama Depan : lestari</li>
+        <li>Nama Belakang : siregar</li>
     </ul>
     <br>
     <h4>Alamat</h4>
     <ul type="none">
-        <li> Jalan Kampung Goestea no.1945 wijaya kusuma</li>
+        <li> jl.utama 1, cengkareng</li>
     </ul>
  
     <h4>Tempat Lahir</h4>
     <ul type="none">
-        <li>Jakarta</li>
+        <li>palembang</li>
     </ul>
 
     <h4>Olah Raga Favorit</h4>
